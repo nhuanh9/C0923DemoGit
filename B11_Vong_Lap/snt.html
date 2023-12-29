@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập vào n");
+    let dem = 0;
+    for (let x = 2; dem <= n; x++) {
+        let kq = true;
+        if (x < 2) {
+            kq = false;
+        }
+        for (let i = 2; i <= x - 1; i++) {
+            if (x % i == 0) {
+                kq = false;
+            }
+        }
+
+        if (kq) {
+            document.write(x+'<br>')
+            dem++;
+        }
+    }
+    // Tạo 1 biến x, x sẽ chạy từ 2 đến vô hạn, x tăng dần
+    // Tạo 1 biến dem, khi dem đủ thì dừng
+</script>
+</body>
+</html>

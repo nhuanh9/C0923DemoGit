@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    Vòng lặp: lặp lại 1 công việc gì đó
+    For, while, do while
+    while (điều kiện tiếp tục) {
+        // Đoạn code cần lặp
+    }
+
+    for(1; 2; 4) {
+        3
+    }
+    1: Khai báo biến đếm
+    2: Điều kiện tiếp tục
+    3: Lệnh cần lặp
+    4: Tăng biến đếm
+    Bước 1 chỉ làm 1 lần duy nhất
+    Mỗi vòng lặp thì thực hiện 2,3,4: 1 lần
+-->
+<script>
+    // In ra Hello 1000 lần
+    // In ra Hello x lần (x nhập vào bằng prompt)
+    // In ra các số từ 1->100
+    // In ra các số từ a->b. a, b nhập vào từ prompt
+    // In ra các số chẵn từ a -> b. a, b nhập vào từ prompt
+    // In ra tổng các số từ a đến b
+    // In ra tích các số từ a đến b
+    // In ra tổng của bình phương các số từ a - b:  1-5 => 1+ 4+ 9 + 16 + 25
+    // In ra số lượng số chia hết cho 5 từ a - b: 1 -> 25 => "5": 5, 10, 15 ,20, 25
+    // In ra trung bình cộng các số chia hết cho 6 từ a -> b
+    //  Hãy viết một chương trình in ra các số từ 1 đến 100.
+    //  Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó.
+    //  Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+    for (let x = 1; x < 100; x++) {
+        if (x % 15 == 0) {
+            document.write('FizzBuzz');
+        }
+        else if (x % 5 == 0) {
+            document.write('Buzz');
+        }
+        else if (x % 3 == 0) {
+            document.write('Fizz');
+        }
+        else document.write(x);
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

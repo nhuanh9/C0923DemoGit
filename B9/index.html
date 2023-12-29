@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    1. Nhap xuat
+    2. Bien, KDL, Toan tu
+    KDL: number, string, boolean
+    Toan tu:
+    - SH: +, -, *, /, %
+    - Gan: =, +=, -=, /=, %=, *=
+    - SS: >, <, >=, <=, ==, !=
+    - Logic: !, &&, ||
+    3. Dieu kien
+    - If
+    - If else
+    - If lồng
+    - ==/===, 1<c && c<10
+    - '10' == 10 => true
+    - '10' === 10 => false
+-->
+<script>
+    let x = +prompt("Nhập vào số: ");
+    if (x % 2 == 0) {
+        alert('Số chẵn')
+        if (x > 10) {
+            alert('x lớn hơn 10 và chia hết cho 2')
+        }
+    } else {
+
+    }
+    if (x % 2 == 0 && x > 10) {
+        alert('x lớn hơn 10 và chia hết cho 2')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    Viết chương trình tính giá điện.
+    //    Nhập vào số điện, nếu số điện < 500 thì đơn giá là 1000,
+    //    nếu số điện >= 500 và <= 1000 thì đơn giá là 1500
+    //    In ra số tiền cần trả
+
+    let soDiem = +prompt("Nhập vào số điện: ");
+    let donGia;
+    if (soDiem < 500) {
+        donGia = 1000;
+    }
+    if (soDiem>=500 && soDiem<=1000) {
+        donGia = 1500;
+    }
+    alert(donGia * soDiem);
+</script>
+</body>
+</html>

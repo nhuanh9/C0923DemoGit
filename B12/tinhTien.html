@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNam = +prompt("Nhập vào số đực: ");
+    let soNu = +prompt("Nhập vào số cái: ");
+    if (soNam > soNu) {
+        alert('khac gioi ' + soNu);
+        alert('dong gioi' + Math.floor((soNam - soNu) / 2))
+    }
+    if (soNam < soNu) {
+        alert('khac gioi ' + soNam);
+        alert('dong gioi' + Math.floor((-soNam + soNu) / 2))
+    }
+
+    //    10, 6 => 6k, (10-6)/2d
+    //    6, 12 => 6k, (12-6)/2d
+    // 10.9999 => 10
+    // 10.0001 => 10
+    // 10 -> 10
+</script>
+</body>
+</html>

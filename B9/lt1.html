@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không-->
+<script>
+    let a = +prompt("Nhập vào a: ");
+    let b = +prompt("Nhập vào b: ");
+    if (a % b == 0) {
+        alert("A có chia hết cho b")
+    } else {
+        alert("A không chia hết cho b")
+    }
+</script>
+<!--Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.-->
+<script>
+    let tuoi = +prompt("Nhập vào tuổi: ");
+    if (tuoi > 16) {
+        alert("Đủ tuổi")
+    } else {
+        alert("Không đủ tuổi")
+    }
+</script>
+<!--Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0-->
+<script>
+
+    let so = +prompt("Nhập vào số: ");
+    if (so > 0) {
+        alert("Đủ")
+    } else {
+        alert("Không đủ")
+    }
+</script>
+
+<!--Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó-->
+<script>
+    let a = +prompt("Nhập vào a: ");
+    let b = +prompt("Nhập vào b: ");
+    let c = +prompt("Nhập vào c: ");
+    let max = a;
+    if (b > max) {
+        max = b;
+    }
+    if (c > max) {
+        max = c;
+    }
+</script>
+<!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+
+
+    let kt = +prompt("Nhập vào kiểm tra: ");
+    let ck = +prompt("Nhập vào cuối kì: ");
+    let gk = +prompt("Nhập vào giữa kì: ");
+    if (kt + ck + gk > 27) {
+        alert('Giỏi')
+    } else if (kt + ck + gk > 20) {
+        alert('Khá')
+    }
+</script>
+
+</body>
+</html>
